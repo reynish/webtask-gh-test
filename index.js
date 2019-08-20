@@ -7,5 +7,6 @@ module.exports = function(context, cb) {
     bot.chat
         .postMessage({ text: 'blah', channel: 'food-bot' })
         .then(console.log)
-        .then(response => cb(null, response));
+        .then(response => cb(null, response))
+        .catch(console.log);
 };
